@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Frontend Mentor | Ping coming soon page</title>
+    <script
+      src="https://kit.fontawesome.com/97b1f5f7ed.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <img
+        src="./assets/images/logo.svg"
+        alt="Image logo"
+        class="header__logo"
+      />
+      <h1 class="header__title">
+        We are launching <span class="header__span">soon!</span>
+      </h1>
+      <p class="header__text">Subscribe and get notified</p>
+    </header>
+    <main class="main">
+      <form action="https://www.google.com/?hl=es" id="form" class="form">
+        <div id="formField" class="form__field">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form__email"
+            placeholder="Your email address..."
+          />
+          <p id="error-message" class="form__error"></p>
+        </div>
+        <input
+          type="submit"
+          id="submitButton"
+          class="form__submit"
+          value="Notify Me"
+        />
+      </form>
+      <img
+        src="./assets/images/illustration-dashboard.png"
+        alt=""
+        class="main__illustration"
+      />
+    </main>
+    <footer class="footer">
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a href="#" class="social-list__link">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="#" class="social-list__link">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="#" class="social-list__link">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="footer__copyright">
+        &copy; Copyright Ping. All rights reserved.
+      </p>
+    </footer>
+    <div>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Nahuel Diaz</a>.
+      </p>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

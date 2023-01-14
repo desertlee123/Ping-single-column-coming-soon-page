@@ -1,0 +1,251 @@
+:root {
+  /* Primary color */
+  --Blue: hsl(223, 87%, 63%);
+  /* Secondary color */
+  --Pale-Blue: hsl(223, 100%, 88%);
+  --Light-Red: hsl(354, 100%, 66%);
+  /* Neutral color */
+  --Gray: hsl(0, 0%, 59%);
+  --Very-Dark-Blue: hsl(209, 33%, 12%);
+  /* Typography */
+  --Body-Font-Family: "Libre Franklin", sans-serif;
+  /* Layout */
+  --Mobile-Design: 300px;
+  --Desktop-Design: 1024px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding-top: 5em;
+  font-family: var(--Body-Font-Family);
+}
+
+.header {
+  max-width: var(--Mobile-Design);
+  margin: 0 auto 2em;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    max-width: var(--Desktop-Design);
+  }
+}
+
+.header__logo {
+  width: 60px;
+  margin-bottom: 1.3em;
+}
+
+@media screen and (min-width: 768px) {
+  .header__logo {
+    width: 80px;
+  }
+}
+
+.header__title {
+  font-size: 23px;
+  font-weight: 300;
+  color: var(--Gray);
+}
+
+@media screen and (min-width: 768px) {
+  .header__title {
+    font-size: 3rem;
+  }
+}
+
+.header__span {
+  font-weight: 700;
+  color: var(--Very-Dark-Blue);
+}
+
+.header__text {
+  font-size: 13px;
+}
+
+@media screen and (min-width: 768px) {
+  .header__text {
+    font-size: 1.5rem;
+  }
+}
+
+.main {
+  max-width: var(--Mobile-Design);
+  margin: 0 auto 6em;
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    max-width: var(--Desktop-Design);
+    text-align: center;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 5em;
+}
+
+@media screen and (min-width: 768px) {
+  .form {
+    width: 600px;
+    margin: 0 auto 5em;
+    gap: 20px;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+  }
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .form__field {
+    width: 100%;
+  }
+}
+
+.form__email,
+.form__submit {
+  padding: 13px 30px;
+  border-radius: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .form__email,
+  .form__submit {
+    font-size: 16px;
+  }
+}
+
+.form__email {
+  font-family: var(--Body-Font-Family);
+  width: 100%;
+  outline: none;
+  border: 1px solid var(--Pale-Blue);
+}
+
+@media screen and (min-width: 768px) {
+  .form__email {
+    padding: 16px 40px;
+  }
+}
+
+.form__email::placeholder {
+  color: var(--Pale-Blue);
+  opacity: 0.6;
+}
+
+.form__error {
+  margin-top: 5px;
+  font-size: 11px;
+  text-align: center;
+  font-style: italic;
+  color: var(--Light-Red);
+}
+
+@media screen and (min-width: 768px) {
+  .form__error {
+    padding-left: 40px;
+    text-align: left;
+    font-size: 14px;
+  }
+}
+
+.form__submit {
+  border: none;
+  background-color: var(--Blue);
+  color: white;
+  box-shadow: 0 10px 25px var(--Pale-Blue);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .form__submit {
+    padding: 16px 60px;
+  }
+}
+
+.form__submit:hover {
+  background-color: hsla(223, 87%, 63%, 0.877);
+}
+
+.main__illustration {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .main__illustration {
+    max-width: 60%;
+  }
+}
+
+.footer {
+  max-width: var(--Mobile-Design);
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
+  margin: 0 auto 1.8em;
+  padding-left: 0;
+  list-style: none;
+}
+
+.social-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  padding: 18px;
+  border-radius: 100%;
+  border: 1px solid var(--Pale-Blue);
+  color: var(--Blue);
+  text-decoration: none;
+}
+
+.social-list__link:hover {
+  color: white;
+  background-color: var(--Blue);
+}
+
+.footer__copyright {
+  text-align: center;
+  font-size: 11px;
+  color: var(--Gray);
+}
+
+@media screen and (min-width: 768px) {
+  .footer__copyright {
+    font-size: 16px;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .attribution {
+    font-size: 16px;
+  }
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
