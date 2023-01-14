@@ -33,4 +33,5 @@ email.addEventListener("change", () => {
 
 submitButton.addEventListener("click", () => {
   if (validateEmail(email.value)) form.submit();
+  else showError();
 });
